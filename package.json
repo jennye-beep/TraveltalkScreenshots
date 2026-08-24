@@ -1,0 +1,7 @@
+{
+  "name": "traveltalk-screenshots",
+  "version": "1.0.0",
+  "dependencies": {
+    "playwright": "^1.55.0"
+  }
+}
