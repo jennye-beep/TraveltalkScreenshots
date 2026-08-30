@@ -6,7 +6,12 @@ const fs = require('fs');
 
   const browser = await chromium.launch({ headless: true });
 
-  const today = new Date().toISOString().slice(0, 10);
+const today = new Intl.DateTimeFormat('en-CA', {
+  timeZone: 'Australia/Sydney',
+  year: 'numeric',
+  month: '2-digit',
+  day: '2-digit'
+}).format(new Date());
 
   // -----------------------------
   // HOMEPAGE - MULTIPLE SCREENSHOTS
